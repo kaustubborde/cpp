@@ -1,0 +1,44 @@
+
+#include<iostream>
+using namespace std;
+class worker
+{
+	private:
+		   int no_hour;
+ 		   string name;
+		   float salary;
+		   
+	public:
+	       void accept()
+		   {
+		   	cout<<" enter name of worker";
+		    cin>>name;
+		   	cout<<" enter working hours of worker";
+            cin>>no_hour;
+            cout<<" enter salary of worker";
+            cin>>salary;
+		   	
+			} 
+			
+		void display()
+		{
+		  cout<<"\n name "<<name;
+		  cout<<"\n working hour "<<no_hour;
+		  cout<<"\n salary "<<salary;
+		}
+		
+	    void sal()
+	    {
+	    	cout<<"\n the salary of worker="<<no_hour*500;
+		}
+	    
+	    
+	};
+int main()
+{
+	worker w1;
+	w1.accept();
+	w1.display();
+	w1.sal();
+	return 0;
+}
